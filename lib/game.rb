@@ -37,7 +37,7 @@ class Game
   end
 
   def start
-    Player.reset_all
+    #Player.reset_all
   end
 
   def won?

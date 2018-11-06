@@ -20,7 +20,7 @@ class Game
    ]
 
   def current_player
-    self.board.turn_count % 2 == 0 ? player_1 : player_2
+    self.board.turn_count % 2 == 1 ? player_1 : player_2
   end
 
   def turn

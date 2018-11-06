@@ -1,3 +1,4 @@
+require 'pry'
 class Game
   attr_accessor :board, :player_1, :player_2
   def initialize(p1 = Players::Human.new("X"), p2 = Players::Human.new("O"), bd = Board.new)

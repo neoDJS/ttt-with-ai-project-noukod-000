@@ -42,7 +42,7 @@ class Game
   end
 
   def won?
-    WIN_COMBINATIONS.detect{|case_set| case_set.all?{|case_i| p self.board.position(case_i.to_s)        
+    WIN_COMBINATIONS.detect{|case_set| case_set.all?{|case_i| p self.board.position(case_i.to_s)
                                                               self.board.position(case_i.to_s) == "X"} || case_set.all?{|case_i| self.board.position(case_i.to_s) == "O"}}
   end
 

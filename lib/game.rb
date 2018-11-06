@@ -45,6 +45,7 @@ class Game
   end
 
   def winner
+    Player.all.detect{|p| p.token == self.won?[0]}
   end
 
   def play

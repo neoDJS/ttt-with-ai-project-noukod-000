@@ -49,5 +49,14 @@ class Game
   end
 
   def play
+    until over?
+      turn
+    end
+
+    if draw?
+      puts "Cat's Game!"
+    elsif WIN_COMBINATIONS.include?(won?)
+      puts "Congratulations #{winner}!"
+    end
   end
 end

@@ -37,7 +37,6 @@ class Game
   end
 
   def start
-    Player.reset_all
     self.play
   end
 

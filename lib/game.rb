@@ -46,7 +46,7 @@ class Game
   end
 
   def winner
-    Player.all.detect{|p| p.token == self.won?[0]}
+    winner_i = over? ? @board[won?[0]] : nil
   end
 
   def play

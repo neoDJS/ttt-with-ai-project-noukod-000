@@ -1,9 +1,9 @@
 class Game
   attr_accessor :board, :player_1, :player_2
-  def initialize
-    @board = Board.new
-    @player_1 = Player.new("X")
-    @player_2 = Player.new("O")
+  def initialize(p1, p2, bd)
+    @board = bd
+    @player_1 = p1
+    @player_2 = p2
   end
 
     # Define your WIN_COMBINATIONS constant

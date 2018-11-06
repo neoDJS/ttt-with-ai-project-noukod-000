@@ -49,11 +49,11 @@ class Game
   end
 
   def play
-    until over?
-      turn
+    until self.over?
+      self.turn
     end
 
-    if draw?
+    if self.draw?
       puts "Cat's Game!"
     elsif WIN_COMBINATIONS.include?(self.won?)
       puts "Congratulations #{winner}!"
@@ -65,6 +65,6 @@ class Game
   end
 
   def over?
-    won? || draw?
+    self.won? || self.draw?
   end
 end

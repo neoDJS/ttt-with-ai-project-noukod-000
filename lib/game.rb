@@ -59,4 +59,12 @@ class Game
       puts "Congratulations #{winner}!"
     end
   end
+
+  def draw?
+    self.board.full? && !WIN_COMBINATIONS.include?(won?)
+  end
+
+  def over?
+    won? || draw?
+  end
 end

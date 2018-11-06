@@ -46,7 +46,7 @@ class Game
   end
 
   def winner
-    winner_i = self.over? ? self.board.position(won?[0].to_s) : nil
+    winner_i = self.over? ? self.board.position(self.won?[0].to_s) : nil
   end
 
   def play

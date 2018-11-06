@@ -55,13 +55,13 @@ class Game
 
     if draw?
       puts "Cat's Game!"
-    elsif WIN_COMBINATIONS.include?(won?)
+    elsif WIN_COMBINATIONS.include?(self.won?)
       puts "Congratulations #{winner}!"
     end
   end
 
   def draw?
-    self.board.full? && !WIN_COMBINATIONS.include?(won?)
+    self.board.full? && !WIN_COMBINATIONS.include?(self.won?)
   end
 
   def over?

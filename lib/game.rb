@@ -44,7 +44,8 @@ class Game
   def won?
     WIN_COMBINATIONS.detect{|case_set| p case_set
                                          (case_set.all?{|case_i| p self.board.position(case_i.to_s)+"_1x"
-                                                              self.board.position(case_i.to_s) == "X"} || case_set.all?{|case_i| self.board.position(case_i.to_s) == "O"})}
+                                                              self.board.position(case_i.to_s) == "X"} || case_set.all?{|case_i| p self.board.position(case_i.to_s)+"_1o"
+                                                                                   self.board.position(case_i.to_s) == "O"})}
   end
 
   def winner
